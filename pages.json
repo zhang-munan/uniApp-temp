@@ -1,0 +1,83 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tab/home",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"titleText": "首页",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#5cb3cc"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/current",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/tab/template",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tab/my",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"custom": {
+			"^dlhc-(.*)": "@/baseConfig/components/dlhc-$1/dlhc-$1.vue" // 匹配baseConfig下的自定义组件
+		}
+	},
+	"tabBar": {
+		"color": "#908f94",
+		"selectedColor": "#5cb3cc",
+		"borderStyle": "white",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/tab/home",
+				"iconPath": "static/image/tabbar/home.png",
+				"selectedIconPath": "static/image/tabbar/selectedHome.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tab/template",
+				"iconPath": "static/image/tabbar/template.png",
+				"selectedIconPath": "static/image/tabbar/selectedTemplate.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/tabbar/design.png",
+				"selectedIconPath": "static/image/tabbar/selectedDesign.png",
+				"text": "设计"
+			},
+			{
+				"pagePath": "pages/tab/my",
+				"iconPath": "static/image/tabbar/mine.png",
+				"selectedIconPath": "static/image/tabbar/selectedMine.png",
+				"text": "我的"
+			}
+		]
+	}
+}
